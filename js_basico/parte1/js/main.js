@@ -14,7 +14,8 @@ console.log(n1 + n2);
 console.log(frase.replace("Japão", "Brasil"));
 //alert(frase.replace("Japão", "Brasil"));
 
-// ARRAY
+
+//ARRAY
 
 // Criando um Array.
 var lista = ["uva", "pêra", "laranja", "banana"];
@@ -68,3 +69,40 @@ var frutas = [{nome:"maçã", cor:"vermelha"},{nome:"uva", cor:"roxo"}];
 console.log(frutas);
 console.log(frutas[1].nome);
 console.log(frutas[1].cor);
+
+
+//CONDICIONAL
+
+//O comando prompt vai exibir uma pergunta no browser. E o que o usuários responder, vai ser gravado na variável.
+var idade = prompt("Qual sua idade?");
+
+if (idade >= 18){
+    console.log("Maior de idade");
+} else {
+    console.log("Menor de idade");
+};
+
+
+//LAÇOS DE REPETIÇÃO
+
+var count = 0;
+while (count < 5){
+    console.log(count);
+    count++;
+}
+
+for(var i=0; i<5; i++) {
+    console.log(i);
+};
+
+
+//DATE
+
+var d = new Date();
+console.log(d);
+//O valor retornado por getDay() é um inteiro que corresponde com o dia da semana: 0 para Domingo, 1 para Segunda-Feira, 2 para Terça-Feira, e assim por diante.
+console.log(d.getDay());
+//O month ele sempre vai iniciar do zero, então você tem que sempre adicionar +1 pra ficar certo.
+console.log(d.getMonth() + 1);
+console.log(d.getFullYear());
+console.log(d.getHours());
